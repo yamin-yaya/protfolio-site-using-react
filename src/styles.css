@@ -1,0 +1,287 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+P{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+.container {
+    padding: 0 50px;
+}
+/* Header Styles  */
+/* Header style is created using styled-componets */
+
+
+/* Landing Section Styles */
+
+ #landing {
+    background-color: #15120d;
+    display: flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+ }
+
+.portfolio-header {
+    text-align: start;
+    padding: 20px;
+    color: #f4f4f4;
+    
+}
+
+.portfolio-header h1 {
+    text-align: start;
+    line-height: 0.94;
+    margin-bottom: 20px;
+}
+
+.designer-btn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0 ;
+}
+  
+.landing-btn{
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 26px ;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.landing-btn:hover {
+    box-shadow: #f4f4f4 0 8px 10px;
+    transform: translateY(-2px);
+}
+  
+.oval-shape {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-55deg);
+    position: relative;
+}
+
+.oval-shape img {
+    width: 90%;
+    position: absolute;
+    object-fit: cover;
+    transform: rotate(55deg);
+    
+}
+ /* ============About Me Section =============== */
+
+ .about-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 50px 100px;
+    align-items: center;
+    text-align: start;
+ }
+
+.text-box {
+    margin: 0 20px;
+    text-align: start;
+}
+
+.text-box h1 {
+    font-size: 3.5rem;
+    text-shadow: 4px 4px  #ccc;
+}
+
+.text-box p {
+    color: #333;
+}
+
+/* Projects Section Styles */
+#projects {
+    padding: 50px;
+    background-color: #15120d;
+}
+
+#projects h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-left: 50px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    height: 350px;
+    box-shadow: 2px 2px  #ccc;
+   
+}
+
+.project-image {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+/* Contact Section Styles */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px;
+  }
+  
+  .column {
+    flex: 1 1 45%; 
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+.contact-info {
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px;
+    padding: 50px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #000;
+  }
+
+  @media (max-width: 768px) {
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar{
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        display: none;
+    }
+    #landing {
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .portfolio-header, .oval-shape {
+        flex: 1 1 40%;
+    }
+    
+    .portfolio-header h1 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .designer-btn{
+        justify-content: center;
+    }
+
+    .column {
+      flex: 1 1 100%; 
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-box {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .text-box h1 {
+        margin: 0;
+    }
+
+    .text-box p {
+        text-align: justify;
+    }
+  }
+  
+
+
+  
